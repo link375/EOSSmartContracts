@@ -61,15 +61,15 @@ https://developers.eos.io/eosio-nodeos/docs/learn-about-wallets-keys-and-account
 
 cleos create wallet -n <name>
 
-# view wallets - * = unlocked
+- view wallets - * = unlocked
 
 cleos wallet list
 
-# lock wallet
+- lock wallet
 
 cleos wallet -n <name> lock
 
-# unlock wallet
+- unlock wallet
 
 cleos wallet -n <name> unlock
 
