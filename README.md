@@ -57,21 +57,21 @@ Account: On-chain identifier tied to a public key
 
 https://developers.eos.io/eosio-nodeos/docs/learn-about-wallets-keys-and-accounts-with-cleos
 
-> create wallet - returns pwd
+create wallet - returns pwd
 
-cleos create wallet -n <name>
+> cleos create wallet -n <name>
 
-- view wallets - * = unlocked
+view wallets - * = unlocked
 
-cleos wallet list
+> cleos wallet list
 
-- lock wallet
+lock wallet
 
-cleos wallet -n <name> lock
+> cleos wallet -n <name> lock
 
-- unlock wallet
+unlock wallet
 
-cleos wallet -n <name> unlock
+> cleos wallet -n <name> unlock
 
 
 
