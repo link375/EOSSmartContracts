@@ -48,6 +48,7 @@ create alias to cleos
 # KEOSD - Manages wallets
 
 Wallets: (encrypted) stores multiple key-pairs
+
 Account: On-chain identifier tied to a public key
 
 
@@ -72,4 +73,20 @@ Unlock wallet
 > cleos wallet -n <name> unlock
 
 
+# Create key-pairs
 
+Create a keypair
+
+> cleos create key
+
+Import the keypair to your wallet - make sure your wallet is unlocked
+
+> cleos wallet import ${private_key_<number>}
+
+Verify import worked
+
+> cleos wallet keys
+
+View public/private keypairs in the wallet
+
+> cleos wallet private_keys --password
