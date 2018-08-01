@@ -73,7 +73,7 @@ Unlock wallet
 > cleos wallet -n <name> unlock
 
 
-# Create key-pairs
+# Create and import key-pairs
 
 Create a keypair
 
@@ -81,7 +81,7 @@ Create a keypair
 
 Import the keypair to your wallet - make sure your wallet is unlocked
 
-> cleos wallet import ${private_key_<number>}
+> cleos wallet import <keynumber>
 
 Verify import worked
 
@@ -90,3 +90,11 @@ Verify import worked
 View public/private keypairs in the wallet
 
 > cleos wallet private_keys --password
+
+# Backup wallets
+
+> cd ~/eos-wallet && ls 
+
+If you're using docker the wallet will be in the /tmp directory
+
+> cd /tmp/eosio/data/
