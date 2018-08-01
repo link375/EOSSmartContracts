@@ -57,7 +57,7 @@ Account: On-chain identifier tied to a public key
 
 https://developers.eos.io/eosio-nodeos/docs/learn-about-wallets-keys-and-accounts-with-cleos
 
-# create wallet - returns pwd
+> create wallet - returns pwd
 
 cleos create wallet -n <name>
 
