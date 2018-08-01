@@ -27,11 +27,51 @@ docker run --rm --name eosio -d -p 8888:8888 -p 9876:9876 -v /tmp/work:/work -v 
 
 docker logs --tail 10 eosio
 
-# CLEOS
+# login to docker container
 
-create alias to cleos
-alias cleos='docker exec -it eosio /opt/eosio/bin/cleos -u http://0.0.0.0:8888 --wallet-url http://0.0.0.0:8888'
+docker exec -it eosio bash
 
 # Stop EOS
 
 bash docker stop eosio
+
+# CLEOS - CLI
+
+https://developers.eos.io/eosio-nodeos/docs/cleos-overview
+
+create alias to cleos
+
+sudo su
+
+alias cleos='docker exec -it eosio /opt/eosio/bin/cleos -u http://0.0.0.0:8888 --wallet-url http://0.0.0.0:8888'
+
+cleos --help
+
+# KEOSD - Manages wallets
+
+Wallets: (encrypted) stores multiple key-pairs
+Account: On-chain identifier tied to a public key
+
+
+# Create wallet
+
+https://developers.eos.io/eosio-nodeos/docs/learn-about-wallets-keys-and-accounts-with-cleos
+
+# create wallet - returns pwd
+
+cleos create wallet -n <name>
+
+# view wallets - * = unlocked
+
+cleos wallet list
+
+# lock wallet
+
+cleos wallet -n <name> lock
+
+# unlock wallet
+
+cleos wallet -n <name> unlock
+
+
+
