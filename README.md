@@ -1,17 +1,15 @@
-# EOSSmartContracts
+# EOS Smart Contracts
 Collection of EOS smart contracts and resources
 
 # Development environment setup & requirements
 
 Ubuntu 18.04
+
 20GB Storage
+
 7GB RAM
-Git
 
-
-# Programming requirements
-
-C++ Knowledge: https://en.cppreference.com/w/cpp/language/auto
+Git / Docker
 
 # DOCKER INSTALL
 
@@ -27,7 +25,7 @@ https://developers.eos.io/eosio-nodeos/docs/docker-quickstart
 
 > docker logs --tail 10 eosio
 
-# login to docker container
+# Login to docker container
 
 > docker exec -it eosio bash
 
@@ -57,19 +55,19 @@ Account: On-chain identifier tied to a public key
 
 https://developers.eos.io/eosio-nodeos/docs/learn-about-wallets-keys-and-accounts-with-cleos
 
-create wallet - returns pwd
+Create wallet - returns pwd
 
 > cleos create wallet -n <name>
 
-view wallets - * = unlocked
+View wallets - * = unlocked
 
 > cleos wallet list
 
-lock wallet
+Lock wallet
 
 > cleos wallet -n <name> lock
 
-unlock wallet
+Unlock wallet
 
 > cleos wallet -n <name> unlock
 
