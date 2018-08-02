@@ -65,7 +65,11 @@ create alias to cleos
 
 > cleos --help
 
-# KEOSD - Manages wallets
+# Keys / Wallets / Accounts
+
+https://developers.eos.io/eosio-nodeos/docs/accounts-and-permissions
+
+Keys: public / Private keypair
 
 Wallets: (encrypted) stores multiple key-pairs
 
@@ -118,6 +122,4 @@ View public/private keypairs in the wallet
 If you're using docker the wallet will be in the /tmp directory
 
 > cd /tmp/eosio/data/
-
-# Creating an account
 
