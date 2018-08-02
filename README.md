@@ -1,6 +1,10 @@
 # EOS Smart Contracts
 Collection of EOS smart contracts and resources
 
+# Online TestNet
+
+http://jungle.cryptolions.io/
+
 # Development environment setup & requirements
 
 Ubuntu 18.04
