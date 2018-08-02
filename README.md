@@ -11,6 +11,22 @@ Ubuntu 18.04
 
 Git / Docker
 
+# BUILD FROM SOURCE
+
+> git clone https://github.com/EOSIO/eos --recursive
+
+> git checkout tags/dawn-v4.2.0
+
+> git submodule update --init --recursive
+
+> ./eosio_build.sh
+
+> export PATH=${HOME}/opt/mongodb/bin:$PATH
+	/home/user/opt/mongodb/bin/mongod -f /home/user/opt/mongodb/mongod.conf &
+	cd /home/user/eos/build; make test
+
+> sudo make install
+
 # DOCKER INSTALL
 
 https://developers.eos.io/eosio-nodeos/docs/docker-quickstart
@@ -25,15 +41,15 @@ https://developers.eos.io/eosio-nodeos/docs/docker-quickstart
 
 > docker logs --tail 10 eosio
 
-# Login to docker container
+Login to docker container
 
 > docker exec -it eosio bash
 
-# Stop EOS
+Stop EOS
 
 > bash docker stop eosio
 
-# CLEOS - CLI
+# CLEOS - CLI (Docker)
 
 https://developers.eos.io/eosio-nodeos/docs/cleos-overview
 
@@ -98,3 +114,6 @@ View public/private keypairs in the wallet
 If you're using docker the wallet will be in the /tmp directory
 
 > cd /tmp/eosio/data/
+
+# Creating an account
+
