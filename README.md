@@ -1,6 +1,10 @@
 # EOS Smart Contracts
 Collection of EOS smart contracts and resources
 
+# Documentation
+
+https://developers.eos.io/
+
 # Online TestNet
 
 http://jungle.cryptolions.io/
